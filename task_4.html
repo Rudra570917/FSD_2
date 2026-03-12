@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function fun(){
+                var obj='{"name":"jay","dob":"2020-01-23"}'
+                var data = JSON.parse(obj)
+                console.log(data.dob)
+                d = new Date(data.dob)
+                document.getElementById('demo').innerHTML=d
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="fun()">Click MEE</button>
+        <p id="demo"></p>
+    </body>
+</html>
