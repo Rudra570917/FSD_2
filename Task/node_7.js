@@ -1,0 +1,8 @@
+var fs=require('fs')
+//fs.mkdirSync("13_03_26")
+fs.writeFileSync("13_03_26/lec1.txt","Module Concept")
+fs.appendFileSync("13_03_26/lec1.txt","\nToday we are learning Node.js FS concept")
+var data=fs.readFileSync("13_03_26/lec1.txt","utf-8")
+console.log(data)
+fs.unlinkSync("13_03_26/lec1.txt")
+fs.rmdirSync("13_03_26")

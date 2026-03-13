@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="b" style="color:red;">Hello</p>
+    <button onclick="fun()">Increase Button</button>
+    <script>
+        // Write code to increase the font size at interval of 50 ms and it should stop increasing when the font size reaches to 50px. This task should be performed when you click on “Increase button” on browser. (Default font size 15px)
+        size=15
+        function f(size){
+            document.getElementById("b").style.fontSize=size+"px"
+        }
+        function fun(){
+            setInterval(()=>{
+            if(size<50){
+                f(size++)
+            }
+
+        },50)
+    }
+    </script>
+    
+</body>
+</html>

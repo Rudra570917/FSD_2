@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a js code that display ”Hello” with increasing font size in interval of 50ms in blue colour and it should stop when font size reaches to 50px. -->
+     <p id="b" style="color:blue;"></p>
+     <script>
+        size=10
+        let i=setInterval(()=>{
+          c=document.getElementById("b")
+          c.innerHTML="Hello"
+          c.style.fontSize=size+"px"
+          if (size<=50){
+            size++
+          }
+
+
+        },1000)
+     </script>
+</body>
+</html>

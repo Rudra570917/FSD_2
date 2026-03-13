@@ -1,0 +1,28 @@
+<!-- Initaialize two variables and increment both the variables each time and display the addidtion of both numbers at interval of 1s. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="a1"></p>
+    <script>
+        let num1=2
+        let num2=5
+        let count=0
+        const a=function(){
+             count++;
+           if(count===5){
+            clearInterval(a)
+           }
+           
+           document.getElementById("a1").innerHTML=++num1 + ++num2;
+         
+        }
+        setInterval(a,1000)
+    </script>
+    
+ </body>
+ </html>
