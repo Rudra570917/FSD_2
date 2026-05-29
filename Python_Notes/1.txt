@@ -1,0 +1,17 @@
+python -m django  startproject L1
+>cd L1
+python manage.py runserver
+python .\manage.py startapp app1
+from django.shortcuts import render
+from django.http import HttpResponse
+def hello(request):
+    return HttpResponse("<h1> Hello Page </h1>")
+
+# Create your views here.
+from app1.views import welcome
+ path("welcome/",welcome)
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def python(request):
+    return render(request,'python.html')
